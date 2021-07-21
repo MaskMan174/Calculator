@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+        <meta charset="utf-8">
+        <script src="Калькулятор.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="Калькулятор.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan=4 id="up">0</td>
+            </tr>
+            <tr>
+                <td><button class=cb onclick="btclear()">AC</button></td>
+                <td><button class=cb onclick="del()">C</button></td>
+                <td><button class=cb onclick="pm()">+/-</button></td>
+                <td><button class=cv onclick="btres(4)">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btnumber(7)">7</button></td>
+                <td><button onclick="btnumber(8)">8</button></td>
+                <td><button onclick="btnumber(9)">9</button></td>
+                <td><button class=cv onclick="btres(3)">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btnumber(4)">4</button></td>
+                <td><button onclick="btnumber(5)">5</button></td>
+                <td><button onclick="btnumber(6)">6</button></td>
+                <td><button class=cv onclick="btres(2)">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="btnumber(1)">1</button></td>
+                <td><button onclick="btnumber(2)">2</button></td>
+                <td><button onclick="btnumber(3)">3</button></td>
+                <td><button class=cv onclick="btres(1)">+</button></td>
+            </tr>
+            <tr>
+                <td colspan=2 id=down1><button onclick="btnumber(0)">0</button></td>
+                <td><button class=cv onclick="btfl()">,</button></td>
+                <td id=down2><button class=cv onclick="res()">=</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
